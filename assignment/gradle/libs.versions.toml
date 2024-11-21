@@ -1,0 +1,42 @@
+[versions]
+agp = "8.7.0"
+kotlin = "1.9.24"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.2.0"
+paho = "1.2.5"
+pahoo = "1.1.1"
+playserviceslocation = "21.0.1"
+mqtt = "1.2.5"
+androidx_core = "1.9.0"
+androidx_appcompat = "1.6.1"
+androidx_activity = "1.6.1"
+androidx_constraintlayout = "2.1.4"
+androidx_junit = "1.1.5"
+androidx_espresso_core = "3.5.1"
+
+[libraries]
+
+mqtt = { group = "org.eclipse.paho", name = "org.eclipse.paho.client.mqttv3", version.ref = "paho" }
+playserviceslocation = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playserviceslocation" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx_core = { module = "androidx.core:core-ktx", version.ref = "androidx_core" }
+androidservice = { group = "org.eclipse.paho", name = "org.eclipse.paho.android.service", version.ref = "pahoo" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
